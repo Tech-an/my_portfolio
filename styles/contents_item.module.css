@@ -1,0 +1,69 @@
+.content_item {
+  /* background-color: rgba(87, 131, 167, 0.7); */
+  /* background-image: url(../public/blog_img.svg); */
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.25);
+  background-blend-mode: lighten;
+  min-width: 25%;
+  width: 280px;
+  height: 280px;
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 7px;
+  font-size: calc(var(--heading3) * 0.8);
+}
+
+.content_summary {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: var(--white);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  composes: content_item;
+  background-image: url(../public/profile_img.svg);
+  background-position: 0% 80%;
+}
+.about:hover,
+.activity:hover,
+.skill:hover,
+.blog:hover,
+.bucket:hover,
+.none:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.activity {
+  composes: content_item;
+  background-image: url(../public/santa_img.svg);
+}
+.skill {
+  composes: content_item;
+  background-image: url(../public/skill.svg);
+  background-position: 20% 0%;
+}
+.blog {
+  composes: content_item;
+  background-image: url(../public/blog_img.svg);
+  background-position: 15% 40%;
+}
+.bucket {
+  composes: content_item;
+  background-image: url(../public/bucket.svg);
+}
+.none {
+  composes: content_item;
+  background-image: url(../public/none.svg);
+}

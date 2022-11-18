@@ -1,0 +1,18 @@
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px calc(var(--margin-beside));
+}
+.contents > * {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+  .contents > * {
+    margin: 0 0 50px;
+  }
+  .contents {
+    margin: 50px 5px;
+  }
+}

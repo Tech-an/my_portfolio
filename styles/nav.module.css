@@ -1,0 +1,29 @@
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: calc(var(--heading2) * 0.8);
+  font-weight: 700;
+  height: 120%;
+}
+.menu li {
+  margin-left: 30px;
+}
+.fa {
+  display: none;
+  height: 100%;
+}
+
+@media (max-width: 1250px) {
+  .menu {
+    font-size: calc(var(--heading3) * 0.8);
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .fa {
+    display: block;
+  }
+}

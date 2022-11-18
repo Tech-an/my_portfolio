@@ -1,0 +1,6 @@
+.profile {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 130px var(--margin-beside);
+}

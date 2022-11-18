@@ -1,0 +1,7 @@
+.profile_text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+  margin-left: 60px;
+}

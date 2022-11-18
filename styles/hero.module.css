@@ -1,0 +1,29 @@
+.hero {
+  background: no-repeat 70% 50% url(../public/TetsuyaSato.jpg);
+  height: 1035px;
+  color: var(--black);
+  padding: 0 156px;
+}
+
+.text {
+  padding-top: calc(var(--display) * 0.5);
+  padding-bottom: calc(var(--display) * 0.7);
+}
+
+.title {
+  font-size: calc(var(--display) * 0.8);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  padding-bottom: var(--space-xs);
+}
+
+.description {
+  font-size: calc(var(--small-heading2) * 1.3);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 0 50px;
+    height: 600px;
+  }
+}
