@@ -1,5 +1,5 @@
 import Logo from "./logo";
-import Nav from "./nav";
+// import Nav from "./nav";
 import styles from "../styles/header.module.css";
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Logo />
-      <Nav />
+      {/* <Nav /> */}
     </header>
   );
 }

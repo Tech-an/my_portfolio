@@ -1,6 +1,6 @@
 import Hero from "../components/Home/hero";
 import News from "../components/Home/news";
-import Contents from "../components/Home/contents";
+// import Contents from "../components/Home/contents";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         description="ようこそ！佐藤哲也のポートフォリオサイトへ！"
       ></Hero>
       <News />
-      <Contents />
+      {/* <Contents /> */}
     </>
   );
 }
