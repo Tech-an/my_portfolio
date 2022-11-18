@@ -1,3 +1,5 @@
+import Text from "react-text-typing";
+
 export default function Bucket() {
-  return <h1>My Bucket-List</h1>;
+  return <Text text="My Bucket-List" showBlink={true} component="h1" />;
 }
