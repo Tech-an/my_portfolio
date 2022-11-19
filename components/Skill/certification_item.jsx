@@ -1,6 +1,6 @@
 import styles from "../../styles/certification_item.module.css";
 
-export default function Certification_item({ title, description, className }) {
+export default function Certification_item({ title, className, children }) {
   let cardStyle = undefined;
   if (className === "ap") {
     cardStyle = styles.ap;
@@ -10,6 +10,8 @@ export default function Certification_item({ title, description, className }) {
     cardStyle = styles.toeic;
   } else if (className === "g") {
     cardStyle = styles.g;
+  } else if (className === "e_test") {
+    cardStyle = styles.e_test;
   }
   return (
     <div className={cardStyle}>
@@ -18,7 +20,7 @@ export default function Certification_item({ title, description, className }) {
           <h2 className={styles.title}>{title}</h2>
         </div>
         <div className={styles.content}>
-          <p>{description}</p>
+          <div>{children}</div>
         </div>
       </div>
     </div>

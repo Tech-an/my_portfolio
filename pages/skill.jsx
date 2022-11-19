@@ -7,6 +7,13 @@ export default function Skill() {
   return (
     <>
       <Section title="Programming">
+        <h2
+          style={{
+            fontSize: "calc(var(--small-heading3)*1.5)",
+          }}
+        >
+          プログラミングスキルを主観で5段階評価しています
+        </h2>
         <PrograSkill />
       </Section>
       <Section title="certification">

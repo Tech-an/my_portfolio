@@ -1,0 +1,19 @@
+.swiper {
+  width: 400px;
+  height: 400px;
+}
+
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+}
+
+.swiperSlide img {
+  display: block;
+  /* height: 400px; */
+  min-height: 300px;
+  aspect-ratio: 1 / 1;
+  text-align: left;
+}

@@ -1,0 +1,9 @@
+.activity {
+  margin: auto var(--margin-beside);
+}
+
+@media (max-width: 660px) {
+  .activity {
+    margin: auto 20px;
+  }
+}

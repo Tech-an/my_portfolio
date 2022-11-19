@@ -10,6 +10,7 @@ export default function Product() {
   return (
     <div className={styles.product}>
       <Swiper
+        className={styles.swiper}
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -21,32 +22,31 @@ export default function Product() {
           disableOnInteraction: false,
         }}
         coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
+          rotate: 30,
+          stretch: -10,
           depth: 100,
-          modifier: 1,
+          modifier: 10,
           slideShadows: true,
         }}
         navigation={true}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        className="custom-swiper"
       >
-        <SwiperSlide className="custom-swiper-slide">
+        <SwiperSlide className={styles.swiperSlide}>
           <Certification_item
             title="None"
             description="None"
             className="default"
           />
         </SwiperSlide>
-        <SwiperSlide className="custom-swiper-slide">
+        <SwiperSlide className={styles.swiperSlide}>
           <Certification_item
             title="None"
             description="None"
             className="default"
           />
         </SwiperSlide>
-        <SwiperSlide className="custom-swiper-slide">
+        <SwiperSlide className={styles.swiperSlide}>
           <Certification_item
             title="None"
             description="None"

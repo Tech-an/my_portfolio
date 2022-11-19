@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.item > * {
+  /* flex: 1; */
+}
+.item > * + * {
+  margin-left: 50px;
+}
+.text {
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+.item figure img {
+  border-radius: 10%;
+}
+
+.item:nth-child(2n) {
+  flex-wrap: wrap;
+}
