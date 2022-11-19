@@ -1,5 +1,6 @@
 import Section from "components/section";
 import Certification from "components/Skill/certification";
+import Product from "components/Skill/product";
 import PrograSkill from "components/Skill/prograskill";
 
 export default function Skill() {
@@ -11,7 +12,9 @@ export default function Skill() {
       <Section title="certification">
         <Certification />
       </Section>
-      <Section title="product"></Section>
+      <Section title="product">
+        <Product />
+      </Section>
     </>
   );
 }

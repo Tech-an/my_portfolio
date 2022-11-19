@@ -1,0 +1,9 @@
+.certification {
+  padding: auto var(--margin-beside);
+}
+
+@media (max-width: 880px) {
+  .certification {
+    padding: 0;
+  }
+}

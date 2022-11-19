@@ -1,0 +1,16 @@
+:root {
+  /* 無理やりスワイプボタンの色を変更 */
+  --swiper-theme-color: black !important;
+}
+.swiper-slide {
+  width: 300px !important;
+  height: 400px !important;
+}
+.swiper-wrapper {
+  width: 300px !important;
+  height: 400px !important;
+}
+.swiper {
+  width: 100% !important;
+  height: 430px !important;
+}
